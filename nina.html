@@ -1,25 +1,42 @@
+<html __fvdsurfcanyoninserted="1"
+    class=" clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone">
 
-
-<html __fvdsurfcanyoninserted="1" class=" clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone"><head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=1, user-scalable=no">
     <title>Happy Birthday</title>
     <style>
         /* If you can't see it just hit space in here*/
         body {
-            font-family:'Wendy One', sans-serif;
+            font-family: 'Wendy One', sans-serif;
         }
-        
+
         body {
-background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #374566), color-stop(100%, #010203));
-background-image: -webkit-radial-gradient(#374566, #010203);
-background-image: -moz-radial-gradient(#374566, #010203);
-background-image: -o-radial-gradient(#374566, #010203);
-background-image: radial-gradient(#374566, #010203);
-}
+            background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #374566), color-stop(100%, #010203));
+            background-image: -webkit-radial-gradient(#374566, #010203);
+            background-image: -moz-radial-gradient(#374566, #010203);
+            background-image: -o-radial-gradient(#374566, #010203);
+            background-image: radial-gradient(#374566, #010203);
+            position: relative;
+        }
+
+        body::after {
+            content: "";
+            background-image: url("nina0.jpg");
+            opacity: 0.1;
+            /* Adjust the opacity as needed */
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
         span {
             text-transform: uppercase;
         }
+
         .container {
             width: 800px;
             height: 420px;
@@ -27,13 +44,15 @@ background-image: radial-gradient(#374566, #010203);
             margin: 0 auto;
             position: relative;
         }
+
         .balloon {
             width: 738px;
             margin: 0 auto;
             padding-top: 30px;
             position: relative;
         }
-        .balloon > div {
+
+        .balloon>div {
             width: 104px;
             height: 140px;
             background: rgba(182, 15, 97, 0.9);
@@ -45,7 +64,8 @@ background-image: radial-gradient(#374566, #010203);
             box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
             -webkit-transform-origin: bottom center;
         }
-        .balloon > div:nth-child(1) {
+
+        .balloon>div:nth-child(1) {
             background: rgba(182, 15, 97, 0.9);
             left: 0;
             box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
@@ -54,10 +74,12 @@ background-image: radial-gradient(#374566, #010203);
             -o-animation: balloon1 6s ease-in-out infinite;
             animation: balloon1 6s ease-in-out infinite;
         }
-        .balloon > div:nth-child(1):before {
+
+        .balloon>div:nth-child(1):before {
             color: rgba(182, 15, 97, 0.9);
         }
-        .balloon > div:nth-child(2) {
+
+        .balloon>div:nth-child(2) {
             background: rgba(242, 112, 45, 0.9);
             left: 120px;
             box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
@@ -66,10 +88,12 @@ background-image: radial-gradient(#374566, #010203);
             -o-animation: balloon2 6s ease-in-out infinite;
             animation: balloon2 6s ease-in-out infinite;
         }
-        .balloon > div:nth-child(2):before {
+
+        .balloon>div:nth-child(2):before {
             color: rgba(242, 112, 45, 0.9);
         }
-        .balloon > div:nth-child(3) {
+
+        .balloon>div:nth-child(3) {
             background: rgba(45, 181, 167, 0.9);
             left: 240px;
             box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
@@ -78,10 +102,12 @@ background-image: radial-gradient(#374566, #010203);
             -o-animation: balloon4 6s ease-in-out infinite;
             animation: balloon4 6s ease-in-out infinite;
         }
-        .balloon > div:nth-child(3):before {
+
+        .balloon>div:nth-child(3):before {
             color: rgba(45, 181, 167, 0.9);
         }
-        .balloon > div:nth-child(4) {
+
+        .balloon>div:nth-child(4) {
             background: rgba(190, 61, 244, 0.9);
             left: 360px;
             box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
@@ -90,10 +116,12 @@ background-image: radial-gradient(#374566, #010203);
             -o-animation: balloon1 5s ease-in-out infinite;
             animation: balloon1 5s ease-in-out infinite;
         }
-        .balloon > div:nth-child(4):before {
+
+        .balloon>div:nth-child(4):before {
             color: rgba(190, 61, 244, 0.9);
         }
-        .balloon > div:nth-child(5) {
+
+        .balloon>div:nth-child(5) {
             background: rgba(180, 224, 67, 0.9);
             left: 480px;
             box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
@@ -102,10 +130,12 @@ background-image: radial-gradient(#374566, #010203);
             -o-animation: balloon3 5s ease-in-out infinite;
             animation: balloon3 5s ease-in-out infinite;
         }
-        .balloon > div:nth-child(5):before {
+
+        .balloon>div:nth-child(5):before {
             color: rgba(180, 224, 67, 0.9);
         }
-        .balloon > div:nth-child(6) {
+
+        .balloon>div:nth-child(6) {
             background: rgba(242, 194, 58, 0.9);
             left: 600px;
             box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
@@ -114,17 +144,20 @@ background-image: radial-gradient(#374566, #010203);
             -o-animation: balloon2 3s ease-in-out infinite;
             animation: balloon2 3s ease-in-out infinite;
         }
-        .balloon > div:nth-child(6):before {
+
+        .balloon>div:nth-child(6):before {
             color: rgba(242, 194, 58, 0.9);
         }
-        .balloon > div:before {
+
+        .balloon>div:before {
             color: rgba(182, 15, 97, 0.9);
             position: absolute;
             bottom: -11px;
             left: 52px;
-            content:"▲";
+            content: "▲";
             font-size: 1em;
         }
+
         span {
             font-size: 4.8em;
             color: white;
@@ -133,138 +166,203 @@ background-image: radial-gradient(#374566, #010203);
             left: 50%;
             margin-left: -27px;
         }
+
         /*BALLOON 1 4*/
         @-webkit-keyframes balloon1 {
-            0%, 100% {
+
+            0%,
+            100% {
                 -webkit-transform: translateY(0) rotate(-6deg);
             }
+
             50% {
                 -webkit-transform: translateY(-20px) rotate(8deg);
             }
         }
+
         @-moz-keyframes balloon1 {
-            0%, 100% {
+
+            0%,
+            100% {
                 -moz-transform: translateY(0) rotate(-6deg);
             }
+
             50% {
                 -moz-transform: translateY(-20px) rotate(8deg);
             }
         }
+
         @-o-keyframes balloon1 {
-            0%, 100% {
+
+            0%,
+            100% {
                 -o-transform: translateY(0) rotate(-6deg);
             }
+
             50% {
                 -o-transform: translateY(-20px) rotate(8deg);
             }
         }
+
         @keyframes balloon1 {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0) rotate(-6deg);
             }
+
             50% {
                 transform: translateY(-20px) rotate(8deg);
             }
         }
+
         /* BAllOON 2 5*/
         @-webkit-keyframes balloon2 {
-            0%, 100% {
+
+            0%,
+            100% {
                 -webkit-transform: translateY(0) rotate(6eg);
             }
+
             50% {
                 -webkit-transform: translateY(-30px) rotate(-8deg);
             }
         }
+
         @-moz-keyframes balloon2 {
-            0%, 100% {
+
+            0%,
+            100% {
                 -moz-transform: translateY(0) rotate(6deg);
             }
+
             50% {
                 -moz-transform: translateY(-30px) rotate(-8deg);
             }
         }
+
         @-o-keyframes balloon2 {
-            0%, 100% {
+
+            0%,
+            100% {
                 -o-transform: translateY(0) rotate(6deg);
             }
+
             50% {
                 -o-transform: translateY(-30px) rotate(-8deg);
             }
         }
+
         @keyframes balloon2 {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0) rotate(6deg);
             }
+
             50% {
                 transform: translateY(-30px) rotate(-8deg);
             }
         }
+
         /* BAllOON 0*/
         @-webkit-keyframes balloon3 {
-            0%, 100% {
+
+            0%,
+            100% {
                 -webkit-transform: translate(0, -10px) rotate(6eg);
             }
+
             50% {
                 -webkit-transform: translate(-20px, 30px) rotate(-8deg);
             }
         }
+
         @-moz-keyframes balloon3 {
-            0%, 100% {
+
+            0%,
+            100% {
                 -moz-transform: translate(0, -10px) rotate(6eg);
             }
+
             50% {
                 -moz-transform: translate(-20px, 30px) rotate(-8deg);
             }
         }
+
         @-o-keyframes balloon3 {
-            0%, 100% {
+
+            0%,
+            100% {
                 -o-transform: translate(0, -10px) rotate(6eg);
             }
+
             50% {
                 -o-transform: translate(-20px, 30px) rotate(-8deg);
             }
         }
+
         @keyframes balloon3 {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translate(0, -10px) rotate(6eg);
             }
+
             50% {
                 transform: translate(-20px, 30px) rotate(-8deg);
             }
         }
+
         /* BAllOON 3*/
         @-webkit-keyframes balloon4 {
-            0%, 100% {
+
+            0%,
+            100% {
                 -webkit-transform: translate(10px, -10px) rotate(-8eg);
             }
+
             50% {
                 -webkit-transform: translate(-15px, 20px) rotate(10deg);
             }
         }
+
         @-moz-keyframes balloon4 {
-            0%, 100% {
+
+            0%,
+            100% {
                 -moz-transform: translate(10px, -10px) rotate(-8eg);
             }
+
             50% {
                 -moz-transform: translate(-15px, 10px) rotate(10deg);
             }
         }
+
         @-o-keyframes balloon4 {
-            0%, 100% {
+
+            0%,
+            100% {
                 -o-transform: translate(10px, -10px) rotate(-8eg);
             }
+
             50% {
                 -o-transform: translate(-15px, 10px) rotate(10deg);
             }
         }
+
         @keyframes balloon4 {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translate(10px, -10px) rotate(-8eg);
             }
+
             50% {
                 transform: translate(-15px, 10px) rotate(10deg);
             }
         }
+
         h1 {
             position: relative;
             top: 200px;
@@ -274,11 +372,11 @@ background-image: radial-gradient(#374566, #010203);
         }
     </style>
     <script>
-        window.open = function() {};
-        window.print = function() {};
+        window.open = function () { };
+        window.print = function () { };
         // Support hover state for mobile.
         if (false) {
-            window.ontouchstart = function() {};
+            window.ontouchstart = function () { };
         }
     </script>
     <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
@@ -286,22 +384,27 @@ background-image: radial-gradient(#374566, #010203);
     <meta content="clickberry-extension-here">
     <style type="text/css"></style>
     <style type="text/css"></style>
-<style type="text/css"></style><style type="text/css"></style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><meta content="clickberry-extension-here"></head>
+    <style type="text/css"></style>
+    <style type="text/css"></style>
+    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+    <meta content="clickberry-extension-here">
+</head>
 
 <body>
     <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
-    
+
 
     <audio id="myAudio" class="song" loop>
-        <source src="hbd.mp3"></source>
+        <source src="hbd.mp3">
+        </source>
         Your browser isn't invited for super fun audio time.
     </audio>
 
-    
-    
-    
 
-   
+
+
+
+
     <div class="container">
         <div class="balloon">
             <div><span>☺</span>
@@ -318,198 +421,360 @@ background-image: radial-gradient(#374566, #010203);
             </div>
         </div>
 
-      <div>  <h1>Happy Birthdaay</h1>
-        <button id="playButton" class="birthday-button" onclick="showCuteMessage()">Click me!</button>
-      </div>
- 
-    
-  
-          <style>
-              /* Your existing CSS styles here... */
-      
-              /* Additional CSS for the button */
-              .birthday-button {
-                position: relative;
-            top: 300px;
-            left: 40%;
-            right: 50%;
-             
-                  background-color: #ff69b4;
-                  color: white;
-                  border: none;
-                  border-radius: 5px;
-                  padding: 10px 20px;
-                  font-size: 18px;
-                  cursor: pointer;
-                  margin-top: 20px;
-              }
-      
-              /* CSS for the cute message popup */
-              .popup {
-                  display: none;
-                  padding: 20px;
-                  position: fixed;
-                  font-size: 30px;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                  width: 900px;
-                  background: white;
-                  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-                  z-index: 1000;
-              }
-      
-              /* Blurred background when the popup is shown */
-              .blurred-background {
-                  position: fixed;
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
-                  background: rgba(0, 0, 0, 0.6);
-                  backdrop-filter: blur(5px);
-                  z-index: 999;
-                  display: none;
-              }
-              .film-popup {
-    background-color: rgba(153, 8, 52, 0.8); /* Semi-transparent black background */
-    color: white; /* Text color */
-    padding: 20px;
-    border-radius: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    max-width: 4000px; /* Set a maximum width for the popup */
-    margin: 0 auto; /* Center the popup horizontally */
-    text-align: center; /* Center text */
-}
-          </style>
-     
-        
-      
-              <!-- Button to trigger the cute message -->
-              
-      
-              <!-- Popup message content -->
-              <div class="popup film-popup" id="cuteMessage">
-                  <p>This is a cute birthday message! <br> hhhhhhhhhhhhhhhhhhhhhhhhh</p>
-                  <button onclick="closeCuteMessage()">Close</button>
-              </div>
-      
-              <!-- Blurred background when the popup is shown -->
-              <div class="blurred-background" id="blurBackground"></div>
-          </div>
-          
-      
-          <script>
-            
-       
-              // Function to show the cute message and blur the background
-              function showCuteMessage() {
-                  document.getElementById("cuteMessage").style.display = "block";
-                  document.getElementById("blurBackground").style.display = "block";
-                  const playButton = document.getElementById('playButton');
-                  const audio = document.getElementById('myAudio');
-    audio.play();
-    
-                
-            }
-      
-              // Function to close the cute message and unblur the background
-              function closeCuteMessage() {
-                  document.getElementById("cuteMessage").style.display = "none";
-                  document.getElementById("blurBackground").style.display = "none";
-              }
-          </script>
-      </body>
-      </html>
-      
+        <div>
+            <h1>Happy Birthdaay</h1>
+            <button id="playButton" class="birthday-button" onclick="showCuteMessage()">Click me!</button>
+        </div>
 
+
+
+        <style>
+            /* Your existing CSS styles here... */
+
+            /* Additional CSS for the button */
+            .birthday-button {
+                position: relative;
+                top: 300px;
+                left: 40%;
+                right: 50%;
+
+                background-color: #ff69b4;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                font-size: 18px;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+
+            /* CSS for the cute message popup */
+            .popup {
+                display: none;
+                padding: 20px;
+                position: fixed;
+                font-size: 30px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 900px;
+                background: white;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                z-index: 1000;
+            }
+
+            /* Blurred background when the popup is shown */
+            .blurred-background {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.6);
+                backdrop-filter: blur(5px);
+                z-index: 999;
+                display: none;
+            }
+
+            .film-popup {
+                background-color: rgba(153, 8, 52, 0.8);
+                /* Semi-transparent black background */
+                color: white;
+                /* Text color */
+                padding: 20px;
+                border-radius: 50px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                max-width: 4000px;
+                /* Set a maximum width for the popup */
+                margin: 0 auto;
+                /* Center the popup horizontally */
+                text-align: center;
+                /* Center text */
+            }
+        </style>
+
+
+
+        <!-- Button to trigger the cute message -->
+
+
+        <!-- Popup message content -->
+        <div class="popup film-popup" id="cuteMessage">
+            <p>Happyyy biiiirthdaaay lina ! <br> Btolet l3mer w bach ma tmniiti inshallah <br> laykhlik lina ( liya w
+                lwalidik z3ma machi smitk hh) <br> inshallah t7e9a9i chno bagha f 7yaatk w twli insana mohima <br> asln
+                7ta daba rak mohima hhh <br> wish uuu aaalll the best nina <3 </p>
+                    <button onclick="closeCuteMessage()">Close</button>
+        </div>
+
+        <!-- Blurred background when the popup is shown -->
+        <div class="blurred-background" id="blurBackground"></div>
     </div>
+
+
     <script>
-        
-    </script>
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage('resize', "*");
+
+
+        // Function to show the cute message and blur the background
+        function showCuteMessage() {
+            document.getElementById("cuteMessage").style.display = "block";
+            document.getElementById("blurBackground").style.display = "block";
+            const playButton = document.getElementById('playButton');
+            const audio = document.getElementById('myAudio');
+            audio.play();
+
+
+        }
+
+        // Function to close the cute message and unblur the background
+        function closeCuteMessage() {
+            document.getElementById("cuteMessage").style.display = "none";
+            document.getElementById("blurBackground").style.display = "none";
         }
     </script>
+</body>
+
+</html>
 
 
-</body></html>
+</div>
+<script>
+
+</script>
+<script>
+    if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage('resize', "*");
+    }
+</script>
 
 
-    
+</body>
+
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flier>* {
+            pointer-events: none !important;
+            top: 0;
+            left: 0;
+            position: fixed;
+            z-index: 999999;
+        }
+
+        .flier img.anim1 {
+            animation: fly1 50s linear infinite;
+        }
+
+        .flier img.anim2 {
+            animation: fly2 50s linear infinite;
+        }
+
+        .flier img.anim3 {
+            animation: fly3 50s linear infinite;
+        }
+
+        .flier img.anim4 {
+            animation: fly4 50s linear infinite;
+        }
+
+        /* Keyframes for the first image */
+        @keyframes fly1 {
+            0% {
+                transform: translateX(-100%) translateY(100vh) rotateZ(0deg);
+            }
+
+            15% {
+                transform: translateX(100vw) translateY(-100%) rotateZ(180deg);
+            }
+
+            15.001%,
+            18% {
+                transform: translateX(100vw) translateY(-30%) rotateZ(0deg);
+            }
+
+            40% {
+                transform: translateX(-200%) translateY(3vh) rotateZ(-180deg);
+            }
+
+            40.001%,
+            43% {
+                transform: translateX(-200%) translateY(-100%) rotateZ(-180deg);
+            }
+
+            65% {
+                transform: translateX(100vw) translateY(50vh) rotateZ(0deg);
+            }
+
+            65.001%,
+            68% {
+                transform: translateX(20vw) translateY(-200%) rotateZ(180deg);
+            }
+
+            95% {
+                transform: translateX(10vw) translateY(100vh) rotateZ(0deg);
+            }
+
+            98.001%,
+            0% {
+                transform: translateX(-200%) translateY(100vh) rotateZ(0deg);
+            }
+        }
+
+        /* Keyframes for the second image */
+        @keyframes fly2 {
+            0% {
+                transform: translateX(-50%) translateY(100vh) rotateZ(0deg);
+            }
+
+            9% {
+                transform: translateX(100vw) translateY(-10%) rotateZ(180deg);
+            }
+
+            15.001%,
+            18% {
+                transform: translateX(30vw) translateY(-30%) rotateZ(0deg);
+            }
+
+            40% {
+                transform: translateX(-200%) translateY(7vh) rotateZ(-180deg);
+            }
+
+            40.001%,
+            43% {
+                transform: translateX(-200%) translateY(-90%) rotateZ(-180deg);
+            }
+
+            50% {
+                transform: translateX(85vw) translateY(53vh) rotateZ(0deg);
+            }
+
+            65.001%,
+            68% {
+                transform: translateX(27vw) translateY(-200%) rotateZ(180deg);
+            }
+
+            91% {
+                transform: translateX(15vw) translateY(100vh) rotateZ(0deg);
+            }
+
+            98.001%,
+            0% {
+                transform: translateX(-200%) translateY(100vh) rotateZ(0deg);
+            }
+
+            /* Define the rest of the keyframes for image 2 here */
+        }
+
+        /* Keyframes for the third image */
+        @keyframes fly3 {
+            0% {
+                transform: translateX(-150%) translateY(100vh) rotateZ(0deg);
+            }
+
+            20% {
+                transform: translateX(100vw) translateY(-100%) rotateZ(180deg);
+            }
+
+            40% {
+                transform: translateX(-200%) translateY(3vh) rotateZ(-180deg);
+            }
+
+            40.001%,
+            43% {
+                transform: translateX(-10%) translateY(-100%) rotateZ(-180deg);
+            }
+
+            65% {
+                transform: translateX(90vw) translateY(50vh) rotateZ(0deg);
+            }
+
+            65.001%,
+            68% {
+                transform: translateX(100vw) translateY(-300%) rotateZ(70deg);
+            }
+
+            95% {
+                transform: translateX(13vw) translateY(82vh) rotateZ(0deg);
+            }
+
+            98.001%,
+            0% {
+                transform: translateX(-130%) translateY(77vh) rotateZ(0deg);
+            }
+
+            /* Define the rest of the keyframes for image 3 here */
+        }
+
+        /* Keyframes for the fourth image */
+        @keyframes fly4 {
+            0% {
+                transform: translateX(-70%) translateY(14vh) rotateZ(0deg);
+            }
+
+            15% {
+                transform: translateX(100vw) translateY(-100%) rotateZ(180deg);
+            }
+
+            30% {
+                transform: translateX(100vw) translateY(-30%) rotateZ(0deg);
+            }
+
+            40% {
+                transform: translateX(-14%) translateY(13vh) rotateZ(-10deg);
+            }
+
+            40.001%,
+            43% {
+                transform: translateX(-20%) translateY(-100%) rotateZ(-180deg);
+            }
+
+            65% {
+                transform: translateX(100vw) translateY(50vh) rotateZ(0deg);
+            }
+
+            61.001%,
+            68% {
+                transform: translateX(20vw) translateY(-200%) rotateZ(180deg);
+            }
+
+            80% {
+                transform: translateX(8vw) translateY(50vh) rotateZ(0deg);
+            }
+
+            98.001%,
+            0% {
+                transform: translateX(-150%) translateY(70vh) rotateZ(0deg);
+            }
+
+            /* Define the rest of the keyframes for image 4 here */
+        }
+    </style>
+</head>
 
 <body>
     <div class="flier">
-        <img class="anim" src="your-image-source-1.jpg" alt="Image 1">
+        <img style="width:200px" class="anim1" src="nina1.png" alt="Image 1">
     </div>
 
     <div class="flier">
-        <img class="anim" src="your-image-source-2.jpg" alt="Image 2">
+        <img style="width:200px" class="anim2" src="nina2.png" alt="Image 2">
     </div>
 
     <div class="flier">
-        <img class="anim" src="your-image-source-3.jpg" alt="Image 3">
+        <img style="width:200px" class="anim3" src="nina3.png" alt="Image 3">
+    </div>
+
+    <div class="flier">
+        <img style="width:200px" class="anim4" src="nina4.png" alt="Image 4">
     </div>
 
     <!-- Add more flier elements as needed -->
 </body>
-<style>
-.flier > * {
-    /* Adjust animation duration to change the element’s speed */
-           
-            pointer-events: none !important;
-        top: 0;
-        left: 0;
-        transform: translateX(-120%) translateY(-120%) rotateZ(0);
-        position: fixed;
-        animation-delay: 1s;
-        z-index: 999999;
-    }
-    
-    .flier img.anim{
-       animation: fly 50s linear infinite;
-    }
-    
-     /* Keyframe values control where the element will begin
-        and end its trajectory across the screen. Each rule
-        represents a path the element follows across the screen. */
-    
-    
-    @keyframes fly {
-    
-        98.001%, 0% {
-                    display: block;
-            transform: translateX(-200%) translateY(100vh) rotateZ(0deg)
-        }
-    
-        15% {
-            transform: translateX(100vw) translateY(-100%) rotateZ(180deg)
-        }
-    
-        15.001%, 18% {
-            transform: translateX(100vw) translateY(-30%) rotateZ(0deg)
-        }
-    
-        40% {
-            transform: translateX(-200%) translateY(3vh) rotateZ(-180deg)
-        }
-    
-        40.001%, 43% {
-            transform: translateX(-200%) translateY(-100%) rotateZ(-180deg)
-        }
-    
-        65% {
-            transform: translateX(100vw) translateY(50vh) rotateZ(0deg)
-        }
-    
-        65.001%, 68% {
-            transform: translateX(20vw) translateY(-200%) rotateZ(180deg)
-        }
-    
-        95% {
-            transform: translateX(10vw) translateY(100vh) rotateZ(0deg)
-        }
-    }
-</style>
 
+</html>
