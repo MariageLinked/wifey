@@ -38,6 +38,20 @@
       font-size: 24px;
       margin-right: 8px;
     }
+.insta-button {
+      background-color: #bb229f; /* Facebook blue color */
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 2px;
+      cursor: pointer;
+    }
+
 
 :root {
   --clr-primary: #55e0ff;;
@@ -215,7 +229,7 @@ p{
  </section>
 
  <script>
-    const quiz = [
+   const quiz = [
   {
     question: "l'age dyalk",
     answers: ["18-24", "24-26", ">26",],
@@ -276,6 +290,7 @@ p{
     answers: ["Barcawya" , "Madridia" , "makntfrjch f kora"],
     goodAnswers: [1,2], // Multiple correct answers (indexes)
   },
+
   // Add more questions here with multiple correct answers as needed
 ];
 let questionIndex = -1;
@@ -389,11 +404,12 @@ function showFinalPage() {
   page.className = "page";
   
   let message = ""; // Initialize an empty message
-  let btn =""
+  let btn = btn2="";
 
   if (goodAnswers === quiz.length) {
     message = '<h1 class="question">Nja7ti albatala 🎉 </h1>' ;
-    btn = '<a href="https://www.facebook.com/ssaayy.mmyy" class="facebook-button"> <i class="fa fa-facebook" aria-hidden="true"></i>  Aji nhdro f FB';
+    btn = '<a href="https://www.facebook.com/profile.php?id=61551605451982" class="facebook-button"> <i class="fa fa-facebook" aria-hidden="true"></i>  Aji nhdro f FB';
+    btn2 = '<a href="https://www.instagram.com/itsmemaaario__" class="insta-button"> <i class="fa fa-instagram" aria-hidden="true"></i>  Ola insta';
   } else {
 
     message = "Raji3i dorossak.";
@@ -407,6 +423,7 @@ function showFinalPage() {
       Your score is ${goodAnswers}/${quiz.length}
     </p>
     ${btn}
+    ${btn2}
   `;
 
   quizContainer.appendChild(page);
