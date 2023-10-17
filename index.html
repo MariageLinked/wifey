@@ -1,9 +1,15 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gabarito">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
 <style>
+  
     body {
-  height: 100%;
+  height: 100vh;
   display: flex;
-  font-family:monospace;
+  font-family: "Gabarito", sans-serif;
   justify-content: center;
   align-items: center;
   background-image: radial-gradient(
@@ -34,7 +40,7 @@
     }
 
 :root {
-  --clr-primary: #37b;
+  --clr-primary: #55e0ff;;
   --clr-good: #5d5;
   --clr-bad: #d55;
 }
@@ -46,8 +52,8 @@ p{
   box-shadow: 0.1em 0.1em 0.5em #0005;
   border-radius: 0.5rem;
   overflow: hidden;
-  height: 20rem;
-  width: 50rem;
+  height: 70%;
+  width: 100%;
   position: relative;
   padding-bottom: 4em;
   padding-top: 0em;
@@ -82,17 +88,17 @@ p{
   color: #ffffff;
   padding: 0.1rem 1.3rem;
   font-size: 1.6rem;
-  font-family: Inter;
+
   cursor: pointer;
   font-weight: 500;
 }
 .question {
   text-align: center;
-  font-family: Inter;
+
   font-weight: 700;
-  color: #ffffff;
+  color: #55e0ff;
   padding-bottom: 0.6rem;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 .answer-container {
   display: flex;
@@ -105,7 +111,6 @@ p{
   width: 100%;
   background: transparent;
   border: none;
-  font-family: Inter;
   font-weight: 600;
   font-size: 1rem;
   padding: 0.3rem 0;
@@ -170,11 +175,10 @@ p{
   animation: showBtn 0.2s ease-out;
   background-color: var(--clr-primary);
   border: none;
-  border-radius: 0.4rem;
-  color: white;
+  border-radius: 0.2rem;
+  color: rgb(0, 0, 0);
   padding: 0.1rem 1.3rem;
   font-size: 1.3rem;
-  font-family: Inter;
   cursor: pointer;
   font-weight: 500;
   bottom: 0.7em;
@@ -201,7 +205,7 @@ p{
 
 <section class="quiz-container">
     <div class="page">
-      <h4 class="question">Quiz</h4>
+      <h2 class="question">Quiz</h2>
       <p>Salam , Ana X 3ndi 24ans calme dakhl so9 rassi, niveau dl 9raya bac+5 , <br> kn9elleb 3la fatatch l2a7lam dyali. <br> ila mhtma dwzi l quizz w ila kano fik ga3 lmowassafat aytle3 lik l compte fb dyali hhh </p>
       
       <div class="answer-container"></div>
@@ -269,7 +273,7 @@ p{
   },
   {
     question: "wa akhiran ?",
-    answers: ["Barcawya" , "Madridya"],
+    answers: ["zwina" , "Madridya"],
     goodAnswers: [1], // Multiple correct answers (indexes)
   },
   // Add more questions here with multiple correct answers as needed
