@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=1, user-scalable=no">
     <title>Happy Birthday</title>
     <style>
         /* If you can't see it just hit space in here*/
         body {
             font-family: 'Wendy One', sans-serif;
+            
         }
 
         body {
@@ -40,9 +41,10 @@
         }
 
         .container {
+            margin: 100px;
             width: 800px;
             height: 420px;
-            padding: 10px;
+            padding-top: 200px;
             margin: 0 auto;
             position: relative;
         }
@@ -439,6 +441,7 @@
                 top: 300px;
                 left: 40%;
                 right: 50%;
+                z-index: 1;
 
                 background-color: #ff69b4;
                 color: white;
@@ -449,8 +452,9 @@
                 cursor: pointer;
                 margin-top: 20px;
             }
+
             .button {
-       
+
 
                 background-color: #ff69b4;
                 color: white;
@@ -486,7 +490,7 @@
                 height: 100%;
                 background: rgba(0, 0, 0, 0.6);
                 backdrop-filter: blur(5px);
-                z-index: 999;
+                z-index: 2;
                 display: none;
             }
 
@@ -530,6 +534,9 @@
 
         // Function to show the cute message and blur the background
         function showCuteMessage() {
+            var confettis = document.getElementById("confettis");
+            confettis.style.display = "block";
+          
             document.getElementById("cuteMessage").style.display = "block";
             document.getElementById("blurBackground").style.display = "block";
             const playButton = document.getElementById('playButton');
@@ -790,5 +797,167 @@
 
     <!-- Add more flier elements as needed -->
 </body>
+<div id="confettis">
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+    <div class="confetti"></div>
+</div>
+<style>
+    #confettis {
+        top: 0%;
+        position: absolute;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        display: none ;
+    }
+
+    .confetti {
+        left: 50%;
+        width: 16px;
+        height: 18px;
+        position: absolute;
+        transform-origin: left top;
+        animation: confetti 8s ease-in-out -2s infinite;
+
+    }
+
+    @keyframes confetti {
+        0% {
+            transform: rotateZ(15deg) rotateY(0deg) translate(0, 0);
+        }
+
+        25% {
+            transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh);
+        }
+
+        50% {
+            transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 60vh);
+        }
+
+        75% {
+            transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 80vh);
+        }
+
+        100% {
+            transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 110vh);
+        }
+    }
+
+    .confetti:nth-child(1) {
+        left: 14%;
+        animation-delay: 0;
+        background-color: #fc0120;
+    }
+
+    .confetti:nth-child(2) {
+        left: 20%;
+        animation-delay: -5s;
+        background-color: #8257e6;
+    }
+
+    .confetti:nth-child(3) {
+        left: 30%;
+        animation-delay: -3s;
+        background-color: #ffbf4d;
+    }
+
+    .confetti:nth-child(4) {
+        left: 40%;
+        animation-delay: -2.5s;
+        background-color: #fe5d7a;
+    }
+
+    .confetti:nth-child(5) {
+        left: 50%;
+        animation-delay: -4s;
+        background-color: #45ec9c;
+    }
+
+    .confetti:nth-child(6) {
+        left: 60%;
+        animation-delay: -6s;
+        background-color: #f6e327;
+    }
+
+    .confetti:nth-child(7) {
+        left: 70%;
+        animation-delay: -1.5s;
+        background-color: #f769ce;
+    }
+
+    .confetti:nth-child(8) {
+        left: 80%;
+        animation-delay: -2s;
+        background-color: #007de7;
+    }
+
+    .confetti:nth-child(9) {
+        left: 90%;
+        animation-delay: -3.5s;
+        background-color: #63b4fc;
+    }
+
+    .confetti:nth-child(10) {
+        left: 100%;
+        animation-delay: -2.5s;
+        background-color: #f9c4ea;
+    }
+
+    .confetti:nth-child(11) {
+        left: 19%;
+        animation-delay: -2.5s;
+        background-color: #fe5d7a;
+    }
+
+    .confetti:nth-child(12) {
+        left: 57%;
+        animation-delay: -3.4s;
+        background-color: #45ec9c;
+    }
+
+    .confetti:nth-child(13) {
+        left: 14%;
+        animation-delay: -1.3s;
+        background-color: #f6e327;
+    }
+
+    .confetti:nth-child(14) {
+        left: 70%;
+        animation-delay: -7.5s;
+        background-color: #f769ce;
+    }
+
+    .confetti:nth-child(15) {
+        left: 22%;
+        animation-delay: -2.2s;
+        background-color: #007de7;
+    }
+
+    .confetti:nth-child(16) {
+        left: 33%;
+        animation-delay: -0.5s;
+        background-color: #63b4fc;
+    }
+
+    .confetti:nth-child(17) {
+        left: 87%;
+        animation-delay: -2.8s;
+        background-color: #f9c4ea;
+    }
+</style>
 
 </html>
