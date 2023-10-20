@@ -48,8 +48,8 @@
             color: #ffa4d8;
         }
 
-        input[type="date"] {
-            width: 50%;
+        input {
+            width: 40%;
             padding: 10px;
             font-size: 100%;
             margin-bottom: 20px;
@@ -59,8 +59,8 @@
             color: #000000;
         }
 
-        input[type="date"]::placeholder {
-            color: #010101;
+        input::placeholder {
+            color: #a80e0e;
         }
 
         button {
@@ -75,7 +75,7 @@
         }
 
         button:hover {
-            background-color: #0066cc; /* Darker blue on hover */
+            background-color: #9409af; /* Darker blue on hover */
         }
     </style>
 </head>
@@ -85,7 +85,7 @@
         <h1>chno la date li hdrna fih awl mrra ?</h1>
         <form>
             
-            <input type="date" id="answer" name="answer" >
+            <input  type="date" id="answer" name="answer" value="2023-10-25" >
             <button type="button" onclick="checkAnswer()">Submit Date</button>
         </form>
     </div>
@@ -99,9 +99,10 @@
             if (userAnswer === correctDate[0] || userAnswer ===  correctDate[1] ) {
                 window.location.href = "nina.html"; // Redirect to the correct answer page
             } else {
-                alert("Incorrect date. Please try again.");
+                alert("Incorrect date. Please try again. ");
             }
         }
     </script>
 </body>
+
 </html
